@@ -1,0 +1,138 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7); /* Gradasi pink */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 16px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.4);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    margin-bottom: 15px;
+    color: #ff69b4; /* Pink */
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-container input {
+    padding: 12px;
+    border: 2px solid #ffb6c1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-container input:focus {
+    border-color: #32cd32;
+}
+
+.form-container input[type="text"] {
+    flex: 1;
+}
+
+button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Tombol utama (Hijau) */
+#addBtn, #filterBtn {
+    background: #32cd32;
+    color: white;
+}
+
+#addBtn:hover, #filterBtn:hover {
+    background: #28a428;
+}
+
+/* Tombol Delete All (Pink) */
+.danger {
+    background: #ff69b4;
+    color: white;
+}
+
+.danger:hover {
+    background: #ff1493;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+th {
+    background: #ffb6c1;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ffd9e1;
+    text-align: center;
+}
+
+td button {
+    background: #90ee90;
+    color: #333;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+td button:hover {
+    background: #32cd32;
+    color: white;
+}
+
+/* Scrollbar custom */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #ffe4ec;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff69b4;
+    border-radius: 10px;
+}
